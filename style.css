@@ -1,0 +1,28 @@
+/* @import url font */
+
+:root {
+    --satu: #111;
+    --dua: #eee
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    appearance: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+      font-size : 1.4rem (fungsi ini membuat default ukuran font)
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      background-color: var(--satu);
+      color: var(--dua);
+      font-family: "Montserrat", sans-serif;
+    }
+    

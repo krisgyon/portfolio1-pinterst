@@ -4,8 +4,17 @@ body {
 }
 
 .navbar {
-  box-shadow: 0 0.01px 3px white;
+  box-shadow: 0 0.01rem 0.1rem white;
   backdrop-filter: blur(0.2rem);
+}
+
+.navbar .navActive {
+  background: linear-gradient(to bottom right, #e66465, #9198e5);
+  min-height: 100vh;
+}
+
+.navbar .offcanvas-header {
+  border-bottom: 0.01rem solid#dc8f8f;
 }
 
 header {

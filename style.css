@@ -1,28 +1,13 @@
-/* @import url font */
+body {
+  background: linear-gradient(to bottom right, #e66465, #9198e5);
+  min-height: 100vh;
+}
 
-:root {
-    --satu: #111;
-    --dua: #eee
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    appearance: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  html {
-      font-size : 1.4rem (fungsi ini membuat default ukuran font)
-      scroll-behavior: smooth;
-    }
-  
-    body {
-      background-color: var(--satu);
-      color: var(--dua);
-      font-family: "Montserrat", sans-serif;
-    }
-    
+.navbar {
+  box-shadow: 0 0.01px 3px white;
+  backdrop-filter: blur(0.2rem);
+}
+
+header {
+  margin-top: 5rem;
+}

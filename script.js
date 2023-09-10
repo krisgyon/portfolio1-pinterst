@@ -4,8 +4,12 @@ const offcanvas = document.querySelector(".offcanvas");
 navLink.forEach((n) =>
   n.addEventListener("click", function (e) {
     e.preventDefault();
-    navLink.forEach((n) => n.classList.remove("active"));
+    navLink.forEach((n) => {
+      n.classList.remove("active");
+      n.removeAttribute("aria-current");
+    });
     e.target.classList.add("active");
+    e.target.ariaCurrent = "page";
   })
 );
 

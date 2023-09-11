@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
 
+* {
+  --lg: linear-gradient(to bottom right, #000427, #1b1e42);
+  --bs: 2px 2px 0.2rem #5e5e5e;
+}
+
 html {
   font-size: 1.2rem;
 }
 
 body {
-  background: linear-gradient(to bottom right, #000427, #1b1e42);
+  background: var(--lg);
   min-height: 500rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -16,12 +21,12 @@ body {
 }
 
 .navbar .navActive {
-  background: linear-gradient(to bottom right, #219fcd, #9198e5);
+  background: var(--lg);
   min-height: 100vh;
 }
 
 .navbar .offcanvas-header {
-  border-bottom: 0.01rem solid#94c8db;
+  border-bottom: 0.01rem solid#1b1e42;
 }
 
 header .container-fluid .row {
@@ -39,10 +44,81 @@ header .container-fluid .row .col h1 {
   line-height: 3.9rem;
 }
 
+header .container-fluid .row .col button {
+  box-shadow: var(--bs);
+}
+
+main .about .row .col-md-6 .border {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+main .about .row .col-md-6 .border img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0.1rem 0.1rem 0.5rem #5e5e5e;
+  position: absolute;
+  left: -2rem;
+  top: -2rem;
+}
+
+main .about .row .col-md-6 h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+main .about .row .col-md-6 p {
+  text-align: justify;
+  color: #aaa;
+}
+
+main .about .row .col-md-6 button {
+  width: 11rem;
+  margin: 1rem;
+  box-shadow: var(--bs);
+}
+
 /* media query */
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   html {
     font-size: 70%;
+  }
+
+  .navbar .nav-link {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  header .container-fluid .row {
+    background-image: url(foto/bgsm.png);
+  }
+
+  main .about .row .col-md-6 .border {
+    width: 250px;
+    height: 250px;
+  }
+
+  main .about .row .col-md-6 .border img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+
+  main .about .row .col-md-6 h2 {
+    padding-top: 2rem;
+  }
+
+  main .about .row .col-md-6 p {
+    padding: 0 2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  html {
+    font-size: 80%;
   }
 }

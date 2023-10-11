@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 * {
   --lg: linear-gradient(to bottom right, #000427, #1b1e42);
-  --bs: 2px 2px 0.2rem #5e5e5e;
+  --bs: 1px 1px 0.1rem #5e5e5e;
 }
 
 html {
@@ -11,7 +13,6 @@ html {
 
 body {
   background: var(--lg);
-  min-height: 500rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -48,6 +49,13 @@ header .container-fluid .row .col button {
   box-shadow: var(--bs);
 }
 
+main .about,
+main .portfolio,
+main .services,
+main .experience {
+  padding-top: 6rem;
+}
+
 main .about .row .col-md-6 .border {
   width: 300px;
   height: 300px;
@@ -57,20 +65,10 @@ main .about .row .col-md-6 .border {
 main .about .row .col-md-6 .border img {
   width: 300px;
   height: 300px;
-  box-shadow: 0.1rem 0.1rem 0.5rem #5e5e5e;
+  box-shadow: 0.1rem 0.1rem 5px #5e5e5e;
   position: absolute;
   left: -2rem;
   top: -2rem;
-}
-
-main .about .row .col-md-6 h2 {
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-main .about .row .col-md-6 p {
-  text-align: justify;
-  color: #aaa;
 }
 
 main .about .row .col-md-6 button {
@@ -79,7 +77,246 @@ main .about .row .col-md-6 button {
   box-shadow: var(--bs);
 }
 
+main .about .row .col-md-6 h2,
+main .portfolio .row .col h2,
+main .services .row .col h2,
+main .experience .row .col h2,
+footer .contact .row .col h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+
+main .about .row p,
+main .portfolio .row p,
+main .services .row p,
+footer .contact .row p {
+  text-align: justify;
+  color: #aaa;
+}
+
+main .portfolio .row {
+  margin-bottom: 2rem;
+}
+
+main .portfolio .navP {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+main .portfolio .navP:hover {
+  color: rgb(207, 207, 207);
+}
+
+main .portfolio .projects {
+  color: white;
+}
+
+main .portfolio .row .col-lg-6 .border {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+main .portfolio .projects .col-lg-6 .border img {
+  width: 400px;
+  height: 300px;
+  box-shadow: -0.1rem -0.1rem 5px #5e5e5e;
+  position: absolute;
+  left: 0.9rem;
+  top: 0.9rem;
+}
+
+main .portfolio .projects:nth-child(odd) .col-lg-6 .border img {
+  width: 400px;
+  height: 300px;
+  box-shadow: 0.1rem -0.1rem 5px #5e5e5e;
+  position: absolute;
+  left: -1.4rem;
+  top: 1rem;
+}
+
+main .portfolio .projects .pText {
+  padding-top: 3rem;
+}
+
+main .portfolio .projects .nav-link span {
+  margin-right: 1rem;
+}
+
+main .portfolio .row .col button {
+  width: 11rem;
+  margin: 1rem;
+  box-shadow: var(--bs);
+}
+
+main .services .justify-content-evenly {
+  margin-top: 2rem;
+}
+
+main .services .row .card {
+  border: 0.3rem solid transparent;
+  border-radius: 0.8rem;
+  background-image: var(--lg), radial-gradient(circle at bottom right, #0011aa, #7168f3);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+main .services .row .card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #7168f3, #07116e);
+  filter: blur(2rem);
+}
+
+main .services .row .col-md-3 {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 100%;
+  display: flex;
+}
+
+main .services .row .cardHeader {
+  height: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+main .services .card .row .col-md-3 i {
+  font-size: 1.2rem;
+}
+
+main .experience {
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+main .experience .row .col h2,
+footer .contact .row .col h2 {
+  margin-bottom: 2rem;
+}
+
+main .experience .row .col-lg-3 {
+  text-align: center;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+main .experience .row h5 {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+footer {
+  background: linear-gradient(-45deg, #7168f3, #07116e);
+  border-radius: 5rem 5rem 0 0;
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(-45deg, #ffffff, #021bff);
+  clip-path: circle(10rem at right center);
+  opacity: 30%;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: -10rem;
+  right: 0;
+}
+
+footer::after {
+  content: "";
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(-45deg, #ffffff, #021bff);
+  clip-path: circle(10rem at left center);
+  opacity: 30%;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+}
+
+footer .contact {
+  padding: 5rem 0 3rem;
+}
+
+footer .contact .row .position-relative {
+  margin: 0.5rem 0;
+}
+
+footer .contact .row .col-md-4 {
+  z-index: 999;
+}
+
+footer .contact .row .bgIcon,
+footer .row .bgIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(-45deg, #07116e, #7168f3);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--bs);
+}
+
+footer .contact .row .bg-form {
+  background: linear-gradient(-45deg, #07116e, #7168f3);
+  box-shadow: var(--bs);
+}
+
+footer .contact .row input,
+footer .contact .row textarea {
+  background: var(--lg);
+}
+
+footer .contact .row .btn {
+  box-shadow: var(--bs);
+}
+
+footer .footer {
+  border-top: 1px solid white;
+}
+
+footer .footer .row .copyRight {
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+footer .footer .row .copyRight a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer .row .copyRight a:hover {
+  color: rgb(181, 181, 181);
+}
+
+footer .footer .row .bgIcon:hover {
+  background: linear-gradient(-45deg, #0c1caf, #837aff);
+}
+
 /* media query */
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 500px) {
+  main .portfolio .nav .navP {
+    width: 40%;
+  }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   html {
@@ -90,6 +327,13 @@ main .about .row .col-md-6 button {
     margin-bottom: 2rem;
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  main .about,
+  main .portfolio,
+  main .services,
+  main .experience {
+    padding-top: 6rem;
   }
 
   header .container-fluid .row {
@@ -111,8 +355,54 @@ main .about .row .col-md-6 button {
     padding-top: 2rem;
   }
 
-  main .about .row .col-md-6 p {
+  main .about .row .col-md-6 p,
+  main .portfolio .projects .pText,
+  main .services .justify-content-evenly .col-lg-5 {
     padding: 0 2rem;
+  }
+
+  main .about .row .col-md-6 button {
+    width: 20rem;
+  }
+
+  main .portfolio .row .col-lg-6 .border {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+
+  main .portfolio .projects .col-lg-6 .border img {
+    width: 300px;
+    height: 200px;
+    box-shadow: -0.1rem -0.1rem 5px #5e5e5e;
+    position: absolute;
+    left: 0.9rem;
+    top: 0.9rem;
+  }
+
+  main .portfolio .projects:nth-child(odd) .col-lg-6 .border img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0.1rem -0.1rem 5px #5e5e5e;
+    position: absolute;
+    left: -1.4rem;
+    top: 1rem;
+  }
+
+  main .services .card-body .col-md-9 {
+    margin-top: 1rem;
+  }
+
+  footer .contact .row .cText {
+    padding: 0 2rem;
+  }
+
+  footer .contact .row .bg-form {
+    margin-top: 1rem;
+  }
+
+  footer .footer .row .copyRight {
+    padding: 1rem 0;
   }
 }
 
@@ -120,5 +410,24 @@ main .about .row .col-md-6 button {
 @media (max-width: 767px) {
   html {
     font-size: 80%;
+  }
+
+  main .portfolio .projects .pText {
+    padding-top: 3rem;
+  }
+
+  footer .contact .bg-form {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 821px) {
+  main .portfolio .navP {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  footer .contact {
+    margin: 0 2rem 0.1rem;
   }
 }

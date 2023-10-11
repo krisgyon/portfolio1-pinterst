@@ -1,9 +1,9 @@
 const navLink = Array.from(document.querySelectorAll("nav a.nav-link"));
 const offcanvas = document.querySelector(".offcanvas");
+const colImg = document.querySelector(".colImg");
 
 navLink.forEach((n) =>
   n.addEventListener("click", function (e) {
-    e.preventDefault();
     navLink.forEach((n) => {
       n.classList.remove("active");
       n.removeAttribute("aria-current");

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>My Portfolio</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="relative">
+      <div class="container">
+        <div class="fixed top-0 left-0 right-0 z-50 flex justify-between p-6 min-w-full shadow shadow-slate-500 backdrop-blur-sm md:items-center lg:px-20">
+          <div class="">
+            <a class="text-3xl font-bold" href="#">LOGO</a>
+          </div>
+          <div class="max-md:hidden">
+            <div class="text-slate-500">
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200 active:text-slate-200" href="#home">Home</a>
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200" href="#about">About</a>
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200" href="#portfolio">Portfolio</a>
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200" href="#services">Services</a>
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200" href="#experience">Experience</a>
+              <a class="px-2 py-8 text-xl font-[500] hover:text-slate-200" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <i class="w-8 h-8 humburger hover:cursor-pointer" data-feather="menu"></i>
+            <div class="absolute top-0 bottom-0 -right-72 w-1/2 min-h-screen text-center transition duration-1000 ease-in bg-gradient-to-r from-cyan-700 to-blue-700 navList">
+              <div class="header flex justify-between items-center px-4 py-8 border-b">
+                <span class="text-2xl font-bold">LOGO</span>
+                <i class="w-6 h-6 hover:cursor-pointer hover:text-red-500 closeNavList" data-feather="x"></i>
+              </div>
+              <div class="body">
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#home">Home</a>
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#about">About</a>
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#portfolio">Portfolio</a>
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#services">Services</a>
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#experience">Experience</a>
+                <a class="block py-8 text-xl font-[500] hover:bg-gradient-to-r from-cyan-500 to-blue-500" href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- main start -->
+    <main>
+      <!-- home start -->
+      <section id="home" class="home">
+        <div class="container lg:mx-auto">
+          <div class="bg-[url('../foto/bgsm.png')] bg-cover bg-no-repeat bg-center w-full min-h-screen flex justify-center items-center md:justify-start md:pl-16 lg:bg-[url('../foto/bg.png')]">
+            <div class="leading-relaxed">
+              <h3 class="text-[1.5rem] md:text-[2rem]">I'm a</h3>
+              <h1 class="text-[3.3rem] font-bold md:text-[3.8rem]">
+                FULL STACK <br />
+                SOFTWARE <br />
+                DEVELOPER.
+              </h1>
+              <button class="w-fit my-4 px-6 py-4 rounded-md bg-slate-700 shadow shadow-white hover:bg-slate-400 hover:shadow-slate-500 md:px-7 md:py-4 md:text-xl">Contact Me</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- home end -->
+      <!-- about start -->
+      <section id="about" class="about">
+        <div class="container lg:mx-auto">
+          <div class="pt-40 flex justify-center flex-wrap lg:flex-nowrap lg:items-center">
+            <div class="lg:w-1/2 lg:h-full lg:flex">
+              <div class="relative w-[250px] h-[250px] border-[5px] rounded-md lg:w-[300px] lg:h-[300px] lg:m-auto">
+                <img class="absolute -top-4 -left-4 rounded-md shadow-md shadow-white" src="../foto/profil.jpg" alt="kris" />
+              </div>
+            </div>
+            <div class="lg:w-1/2 lg:h-full lg:-translate-x-16">
+              <div class="p-8 lg:py-0">
+                <h2 class="text-center text-2xl font-bold lg:text-3xl">ABOUT ME</h2>
+                <p class="pt-4 text-lg text-justify text-slate-300 leading-relaxed">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ratione amet veritatis voluptate laboriosam consequuntur facilis quibusdam eligendi fugit. Laudantium, expedita doloremque dolorum incidunt praesentium,
+                  veroinventore animi soluta error, maxime molestias perspiciatis voluptate necessitatibus nihil repudiandae. Reprehenderit esse aperiam eius, quia vitae officiis in obcaecati ducimus aspernatur, magni tempore.
+                </p>
+              </div>
+              <div class="w-full p-8 text-center lg:flex">
+                <button type="button" class="my-2 w-3/4 h-12 rounded-md bg-slate-700 shadow shadow-white hover:bg-slate-400 hover:shadow-slate-500 lg:mx-4">HIRE ME</button>
+                <button type="button" class="my-2 w-3/4 h-12 rounded-md border-2 shadow shadow-white hover:bg-slate-400 hover:shadow-slate-500 lg:mx-4">RESUME</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- portfolio start -->
+      <section id="portfolio" class="portfolio">
+        <div class="container lg:mx-auto">
+          <div class="pt-32 flex justify-center flex-wrap">
+            <h2 class="text-center text-2xl font-bold lg:text-3xl">PORTFOLIO</h2>
+            <nav class="mt-4 mb-12 w-full flex flex-wrap text-center lg:flex-nowrap lg:justify-center">
+              <a class="w-1/2 my-2 font-[600] hover:text-slate-300 lg:w-fit lg:mx-8 lg:text-xl" href="#">Mobile App</a>
+              <a class="w-1/2 my-2 font-[600] hover:text-slate-300 lg:w-fit lg:mx-8 lg:text-xl" href="#">Website</a>
+              <a class="w-1/2 my-2 font-[600] hover:text-slate-300 lg:w-fit lg:mx-8 lg:text-xl" href="#">Desktop</a>
+              <a class="w-1/2 my-2 font-[600] hover:text-slate-300 lg:w-fit lg:mx-8 lg:text-xl" href="#">Other Projects</a>
+            </nav>
+            <div class="">
+              <div class="px-8 py-4 flex justify-center items-center flex-wrap lg:flex-nowrap">
+                <div class="lg:w-1/2">
+                  <div class="relative w-[300px] h-[200px] m-auto border-[5px] rounded-md lg:w-[400] lg:h-[300]">
+                    <img class="absolute top-4 -left-4 rounded-md shadow-[0_-2px_10px_0] shadow-white" src="https://picsum.photos/id/238/400/300" alt="kris" />
+                  </div>
+                </div>
+                <div class="lg:w-1/2 leading-relaxed">
+                  <h3 class="mt-14 text-2xl text-blue-500 lg:text-3xl">Project 1</h3>
+                  <h4 class="mt-2 text-xl font-bold lg:text-2xl">Mobile App Design</h4>
+                  <p class="my-2 text-slate-300 text-justify lg:pr-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat? Iusto consequuntur maxime nostrum nihil numquam ut. Quisquam unde magni tenetur numquam soluta voluptas sed aspernatur nostrum amet. Voluptate, est!
+                  </p>
+                  <a class="hover:text-slate-300" href="#"><span class="mr-4">&rarr;</span>Read me</a>
+                </div>
+              </div>
+              <div class="px-8 py-4 flex justify-center items-center flex-wrap lg:flex-nowrap">
+                <div class="lg:w-1/2 lg:order-2">
+                  <div class="relative w-[300px] h-[200px] m-auto border-[5px] rounded-md lg:w-[400] lg:h-[300]">
+                    <img class="absolute top-4 -right-4 rounded-md shadow-[0_-2px_10px_0] shadow-white" src="https://picsum.photos/id/239/400/300" alt="kris" />
+                  </div>
+                </div>
+                <div class="lg:w-1/2 leading-relaxed lg:pl-12">
+                  <h3 class="mt-14 text-2xl text-blue-500 lg:text-3xl">Project 2</h3>
+                  <h4 class="mt-2 text-xl font-bold lg:text-2xl">Mobile App Design</h4>
+                  <p class="my-2 text-slate-300 text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat? Iusto consequuntur maxime nostrum nihil numquam ut. Quisquam unde magni tenetur numquam soluta voluptas sed aspernatur nostrum amet. Voluptate, est!
+                  </p>
+                  <a class="hover:text-slate-300" href="#"><span class="mr-4">&rarr;</span>Read me</a>
+                </div>
+              </div>
+              <div class="px-8 py-4 flex justify-center items-center flex-wrap lg:flex-nowrap">
+                <div class="lg:w-1/2">
+                  <div class="relative w-[300px] h-[200px] m-auto border-[5px] rounded-md">
+                    <img class="absolute top-4 -left-4 rounded-md shadow-[0_-2px_10px_0] shadow-white" src="https://picsum.photos/id/240/400/300" alt="kris" />
+                  </div>
+                </div>
+                <div class="lg:w-1/2 leading-relaxed">
+                  <h3 class="mt-14 text-2xl text-blue-500 lg:text-3xl">Project 3</h3>
+                  <h4 class="mt-2 text-xl font-bold lg:text-2xl">Mobile App Design</h4>
+                  <p class="my-2 text-slate-300 text-justify lg:pr-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat? Iusto consequuntur maxime nostrum nihil numquam ut. Quisquam unde magni tenetur numquam soluta voluptas sed aspernatur nostrum amet. Voluptate, est!
+                  </p>
+                  <a class="hover:text-slate-300" href="#"><span class="mr-4">&rarr;</span>Read me</a>
+                </div>
+              </div>
+              <div class="px-8 py-4 flex justify-center items-center flex-wrap lg:flex-nowrap">
+                <div class="lg:w-1/2 lg:order-2">
+                  <div class="relative w-[300px] h-[200px] m-auto border-[5px] rounded-md">
+                    <img class="absolute top-4 -right-4 rounded-md shadow-[0_-2px_10px_0] shadow-white" src="https://picsum.photos/id/241/400/300" alt="kris" />
+                  </div>
+                </div>
+                <div class="lg:w-1/2 leading-relaxed lg:pl-12">
+                  <h3 class="mt-14 text-2xl text-blue-500 lg:text-3xl">Project 4</h3>
+                  <h4 class="mt-2 text-xl font-bold lg:text-2xl">Mobile App Design</h4>
+                  <p class="my-2 text-slate-300 text-justify lg:pr-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, fugiat? Iusto consequuntur maxime nostrum nihil numquam ut. Quisquam unde magni tenetur numquam soluta voluptas sed aspernatur nostrum amet. Voluptate, est!
+                  </p>
+                  <a class="hover:text-slate-300" href="#"><span class="mr-4">&rarr;</span>Read me</a>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <button class="my-4 px-7 py-3 bg-blue-500 rounded-md shadow shadow-white hover:bg-blue-700 hover:shadow-slate-500" type="button">View all</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- portfolio end -->
+      <!-- service start -->
+      <section id="services" class="services">
+        <div class="container lg:mx-auto">
+          <div class="pt-32 flex justify-center flex-wrap lg:pt-28">
+            <h2 class="text-center text-2xl font-bold lg:text-3xl">SERVICES</h2>
+            <div class="p-8 lg:flex lg:justify-center lg:flex-wrap">
+              <div class="my-6 p-4 border-4 rounded-md border-indigo-700 shadow-lg shadow-indigo-300 lg:w-1/3 lg:mx-8 lg:mb-8">
+                <div class="lg:flex lg:justify-around lg:items-center">
+                  <div class="m-auto flex w-16 h-16 rounded-full bg-white lg:m-0">
+                    <i class="m-auto w-6 h-6 text-slate-700" data-feather="camera"></i>
+                  </div>
+                  <div class="my-2 text-center lg:w-2/3">
+                    <h5 class="text-xl font-bold lg:text-2xl">PHOTO EDITING</h5>
+                  </div>
+                </div>
+                <div class="lg:mt-4">
+                  <p class="text-slate-300 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis nulla enim. Id rem quod cum consequuntur? Dignissimos et quas facere asperiores corporis! Repellat possimus odio hic soluta assumenda suscipit
+                    unde?Soluta labore molestias numquam.
+                  </p>
+                </div>
+              </div>
+              <div class="my-6 p-4 border-4 rounded-md border-indigo-700 shadow-lg shadow-indigo-300 lg:w-1/3 lg:mx-8 lg:mb-8">
+                <div class="lg:flex lg:justify-around lg:items-center">
+                  <div class="m-auto flex w-16 h-16 rounded-full bg-white lg:m-0">
+                    <i class="m-auto w-6 h-6 text-slate-700" data-feather="smartphone"></i>
+                  </div>
+                  <div class="my-2 text-center lg:w-2/3">
+                    <h5 class="text-xl font-bold lg:text-2xl">MOBILE APP DEVELOPMENT</h5>
+                  </div>
+                </div>
+                <div class="lg:mt-4">
+                  <p class="text-slate-300 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis nulla enim. Id rem quod cum consequuntur? Dignissimos et quas facere asperiores corporis! Repellat possimus odio hic soluta assumenda suscipit
+                    unde?Soluta labore molestias numquam.
+                  </p>
+                </div>
+              </div>
+              <div class="my-6 p-4 border-4 rounded-md border-indigo-700 shadow-lg shadow-indigo-300 lg:w-1/3 lg:mx-8 lg:mb-8">
+                <div class="lg:flex lg:justify-around lg:items-center0">
+                  <div class="m-auto flex w-16 h-16 rounded-full bg-white lg:m-0">
+                    <i class="m-auto w-6 h-6 text-slate-700" data-feather="monitor"></i>
+                  </div>
+                  <div class="my-2 text-center lg:w-2/3">
+                    <h5 class="text-xl font-bold lg:text-2xl">DESKTOP APP DEVELOPMENT</h5>
+                  </div>
+                </div>
+                <div class="lg:mt-4">
+                  <p class="text-slate-300 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis nulla enim. Id rem quod cum consequuntur? Dignissimos et quas facere asperiores corporis! Repellat possimus odio hic soluta assumenda suscipit
+                    unde?Soluta labore molestias numquam.
+                  </p>
+                </div>
+              </div>
+              <div class="my-6 p-4 border-4 rounded-md border-indigo-700 shadow-lg shadow-indigo-300 lg:w-1/3 lg:mx-8 lg:mb-8">
+                <div class="lg:flex lg:justify-around lg:items-center0">
+                  <div class="m-auto flex w-16 h-16 rounded-full bg-white lg:m-0">
+                    <i class="m-auto w-6 h-6 text-slate-700" data-feather="code"></i>
+                  </div>
+                  <div class="my-2 text-center lg:w-2/3">
+                    <h5 class="text-xl font-bold lg:text-2xl">PROGRAMMING LENGUAGES</h5>
+                  </div>
+                </div>
+                <div class="lg:mt-4">
+                  <p class="text-slate-300 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis nulla enim. Id rem quod cum consequuntur? Dignissimos et quas facere asperiores corporis! Repellat possimus odio hic soluta assumenda suscipit
+                    unde?Soluta labore molestias numquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service end -->
+      <!-- experience start -->
+      <section id="experience">
+        <div class="container lg:mx-auto">
+          <div class="mb-12 pt-32 md:pt-28 lg:mb-0 lg:pt-24">
+            <h2 class="py-4 text-center text-2xl font-bold lg:text-3xl">EXPERIENCE</h2>
+            <div class="flex justify-center flex-wrap">
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/html.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">HTML</h5>
+              </div>
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/css.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">CSS</h5>
+              </div>
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/js.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">JAVASCRIPT</h5>
+              </div>
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/bootstrap.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">BOOSTRAP</h5>
+              </div>
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/nodejs.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">NODE.JS</h5>
+              </div>
+              <div class="w-1/4 my-4">
+                <img class="m-auto" src="../foto/skills/coreldraw.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">CORELDRAW</h5>
+              </div>
+              <div class="w-1/4 p-2">
+                <img class="m-auto" src="../foto/skills/photoshop.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">PHOTOSHOP</h5>
+              </div>
+              <div class="w-1/4 p-2">
+                <img class="m-auto" src="../foto/skills/html.png" alt="kris" />
+                <h5 class="my-2 text-slate-300 text-center text-sm">HTML</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- experience end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer>
+      <div class="pt-32 lg:pt-52">
+        <div class="h-full bg-gradient-to-r from-indigo-900 to-indigo-700 rounded-tl-[4rem] rounded-tr-[4rem] relative">
+          <!-- contact start -->
+          <section id="contact" class="contact tes">
+            <div class="container pt-20 md:pt-24 lg:pt-20 relative lg:mx-auto">
+              <div class="pt-4 px-8 flex justify-center flex-wrap">
+                <h2 class="py-4 text-center text-2xl font-bold lg:text-3xl lg:mb-8">CONTACT</h2>
+                <div class="lg:flex lg:justify-around">
+                  <div class="lg:w-1/2 lg:mx-4">
+                    <h4 class="text-lg font-bold lg:text-2xl lg:mb-2">Drop Me a Message</h4>
+                    <p class="mb-1 text-slate-300 text-justify leading-relaxed lg:mb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quod animi iste tempore officia hic autem quaerat nulla. Veritatis, dolores.</p>
+                    <div class="flex my-2 lg:mb-4">
+                      <div class="w-12 h-12 flex rounded-md bg-gradient-to-r from-cyan-900 to-blue-900 shadow shadow-white">
+                        <i class="m-auto" data-feather="phone"></i>
+                      </div>
+                      <div class="ml-4 flex">
+                        <h6 class="m-auto lg:text-xl">+62 812 2629 6068</h6>
+                      </div>
+                    </div>
+                    <div class="flex my-2 lg:mb-4">
+                      <div class="w-12 h-12 flex rounded-md bg-gradient-to-r from-cyan-900 to-blue-900 shadow shadow-white">
+                        <i class="m-auto" data-feather="mail"></i>
+                      </div>
+                      <div class="ml-4 flex">
+                        <h6 class="m-auto lg:text-xl">krisgyon28@gmail.com</h6>
+                      </div>
+                    </div>
+                    <div class="flex my-2 lg:mb-4">
+                      <div class="w-12 h-12 flex rounded-md bg-gradient-to-r from-cyan-900 to-blue-900 shadow shadow-white">
+                        <i class="m-auto" data-feather="map-pin"></i>
+                      </div>
+                      <div class="ml-4 flex">
+                        <h6 class="m-auto lg:text-xl">Sleman, Yogyakarta</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/2 lg:mx-4">
+                    <div class="w-full mt-8 p-8 bg-gradient-to-r from-cyan-800 to-blue-800 shadow-md shadow-white rounded-md lg:mt-0">
+                      <div class="grid grid-cols-1 gap-6">
+                        <label for="" class="block">
+                          <input type="text" name="" id="" class="form-input mt-1 block w-full h-12 pl-4 rounded-md bg-indigo-200 border-transparent focus:bg-white focus:ring-1 focus:ring-blue-300 text-slate-700" placeholder="Nama" />
+                        </label>
+                        <label for="" class="block">
+                          <input type="email" name="" id="" class="form-input mt-1 block w-full h-12 pl-4 rounded-md bg-indigo-200 border-transparent focus:bg-white focus:ring-1 focus:ring-blue-300 text-slate-700" placeholder="Email" />
+                        </label>
+                        <label for="" class="block">
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="5"
+                            class="form-textarea mt-1 block w-full pt-4 pl-4 rounded-md bg-indigo-200 border-transparent focus:bg-white focus:ring-1 focus:ring-blue-300 text-slate-700"
+                            placeholder="Message"
+                          ></textarea>
+                        </label>
+
+                        <button type="button" class="w-1/2 h-12 rounded-md bg-indigo-200 text-slate-700 shadow shadow-slate-700 hover:bg-indigo-50 hover:shadow-white">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- contact end -->
+
+          <section id="footer" class="footer">
+            <div class="container lg:mx-auto">
+              <div class="mt-32 pt-8 text-center border-t-2 border-slate-500 leading-relaxed md:flex md:justify-around lg:pb-4">
+                <div class="">
+                  <h4 class="text-xl font-bold md:text-2xl">LOGO</h4>
+                </div>
+                <div class="my-4 md:text-xl lg:my-0">
+                  <p>2023. All Rights Reserved.</p>
+                  <p>Original Design <a class="hover:opacity-60" href="https://id.pinterest.com/pin/662169951482244622/" target="_blank">Fazil Laghari.</a></p>
+                  <p>Remake <a class="hover:opacity-60" href="https://krisgyon.github.io/" target="_blank">Kris.</a></p>
+                </div>
+                <div class="pb-8 flex justify-center">
+                  <a
+                    class="w-12 h-12 mx-4 flex rounded-md bg-gradient-to-r from-cyan-900 to-blue-900 shadow shadow-white hover:bg-gradient-to-r hover:from-cyan-700 hover:to-blue-700"
+                    href="https://www.instagram.com/kris.gyon"
+                    target="_blank"
+                    ><i class="m-auto" data-feather="instagram"></i
+                  ></a>
+                  <a class="w-12 h-12 mx-4 flex rounded-md bg-gradient-to-r from-cyan-900 to-blue-900 shadow shadow-white hover:bg-gradient-to-r hover:from-cyan-700 hover:to-blue-700" href="https://github.com/krisgyon" target="_blank"
+                    ><i class="m-auto" data-feather="github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

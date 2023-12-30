@@ -1,0 +1,8 @@
+# .gitattributes
+* text=auto eol=lf
+
+# File-specific settings
+*.css text
+*.js text
+*.json text
+*.html text

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to bottom right, #000427, #1b1e42);
+  }
+
+  body {
+    color: white;
+  }
+}
+
+@layer components {
+  @media (min-width: 1024px) {
+    .tes::before {
+      content: "";
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(-45deg, #ffffff, #021bff);
+      opacity: 30%;
+      mix-blend-mode: difference;
+      clip-path: circle(200px at left center);
+      position: absolute;
+      top: -10rem;
+      left: 0;
+    }
+
+    .tes::after {
+      content: "";
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(-45deg, #ffffff, #021bff);
+      opacity: 30%;
+      mix-blend-mode: difference;
+      clip-path: circle(200px at right center);
+      position: absolute;
+      top: -10rem;
+      right: 0;
+    }
+  }
+  @media (max-width: 700px) {
+    .tes::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(-45deg, #ffffff, #021bff);
+      opacity: 30%;
+      mix-blend-mode: difference;
+      clip-path: circle(100px at left center);
+      position: absolute;
+      top: -6rem;
+      left: 0;
+    }
+
+    .tes::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(-45deg, #ffffff, #021bff);
+      opacity: 30%;
+      mix-blend-mode: difference;
+      clip-path: circle(100px at right center);
+      position: absolute;
+      top: -6rem;
+      right: 0;
+    }
+  }
+}
